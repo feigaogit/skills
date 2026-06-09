@@ -9,6 +9,7 @@
 ## Files That Matter
 
 - `.opencode/skills/dingding-report-writer/SKILL.md`: defines the daily/weekly draft, confirmation, config, and send rules.
+- `.opencode/skills/frontend-design/SKILL.md`: defines the frontend design and beautification skill, emphasizing high-distinction, non-templated visual design and automatic preview support.
 - `.xcode/dingding-report-config.yaml`: local runtime config for template names, recipients, and `ddFrom`; `.xcode/` is gitignored, so do not commit or copy its private values.
 - `.xcode/scheduled-tasks.yaml`: local XCode schedule config; current daily draft task is also gitignored runtime state.
 - `.opencode/package.json`: only declares the OpenCode plugin dependency; there are no project scripts.
