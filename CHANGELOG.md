@@ -13,3 +13,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - 新增前端界面设计与美化技能 `.opencode/skills/frontend-design/SKILL.md`，定义了高辨识度、非模板化视觉设计原则及静态文件自动预览流程。
 - 在 `AGENTS.md` 中注册并记录了新增的 `.opencode/skills/frontend-design/SKILL.md` 文件。
+- 新增智慧校园数据分析技能 `.opencode/skills/smart-campus-analyst/SKILL.md`，支持通过 BDS MCP 生成学校指标分析报告，并在有数据时询问是否生成可视化图表页面。

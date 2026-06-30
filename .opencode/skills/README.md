@@ -9,6 +9,7 @@
 | [`dingding-report-writer`](dingding-report-writer/SKILL.md) | 办公自动化 | 写、生成、确认、发送或配置钉钉日报/周报 | 写日报、写周报、发送日报、确认发送周报、配置日报收件人 | 先生成清单式草稿，用户确认后调用钉钉日志发送 |
 | [`frontend-design`](frontend-design/SKILL.md) | 前端设计 | 构建、美化或改造 Web 页面、组件、应用、仪表盘、落地页或 HTML/CSS 布局 | 做个页面、美化前端、设计 dashboard、改造 UI、做落地页 | 生成高辨识度、生产级、非模板化的前端界面，并在可预览时启动服务 |
 | [`k0s-installer`](k0s-installer/SKILL.md) | 运维部署 | 在新服务器、裸机、虚拟机、内网或离线环境安装、卸载、重装、修复、验证 k0s/Kubernetes 单节点集群 | 安装 k0s、一键部署 k0s、卸载 k0s、重装 k0s、k0s token、k0s API 地址、airgap、CoreDNS CrashLoopBackOff、conntrack 缺失 | 完成 k0s 部署，处理依赖/DNS/CoreDNS/airgap 问题，GitHub 慢或失败时回退 CDN，输出 API URL 和完整 admin token；或在明确确认后清理 k0s 服务、数据、配置和二进制 |
+| [`smart-campus-analyst`](smart-campus-analyst/SKILL.md) | 数据分析 | 分析学校数据、智慧校园指标、学校运行情况或导出校园数据报告 | 分析学校数据、智慧校园报告、智慧校园指标、导出校园数据报告、生成校园图表 | 通过 BDS MCP 查询当前学校指标，生成结构化 Markdown 分析报告，并在有数据时询问是否生成可视化 HTML 图表 |
 
 ## 按场景选择
 
@@ -40,6 +41,15 @@
 - 处理内网、离线、airgap bundle、依赖缺失、apt 源不可达。
 - 修复宿主机 DNS、CoreDNS CrashLoopBackOff、kube-router 相关网络问题。
 - 最终输出 Kubernetes API 地址和 admin token。
+
+### 数据分析
+
+使用 [`smart-campus-analyst`](smart-campus-analyst/SKILL.md)：
+
+- 分析学校基本情况、学生服务、教务服务、行政办公和公共登录等智慧校园指标。
+- 通过 `BDS_MCP_TOKEN` 调用 BDS MCP，并根据 JWT filters 限定当前学校数据范围。
+- 生成结构化 Markdown 分析报告，包含总体概览、分项分析、异常关注和建议。
+- 在成功获取有效数据后，询问是否生成可视化 HTML 图表页面。
 
 ## 新增技能时要更新这里
 

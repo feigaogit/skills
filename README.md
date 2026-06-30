@@ -15,6 +15,7 @@
 | `dingding-report-writer` | 办公自动化 | 写、生成、确认或发送钉钉日报/周报 | 写日报、写周报、确认发送日报 | 生成清单式草稿，用户确认后发送钉钉日志 |
 | `frontend-design` | 前端设计 | 构建、美化或改造 Web 页面/组件/UI | 做个页面、美化前端、设计仪表盘 | 生成有辨识度、可预览的前端界面 |
 | `k0s-installer` | 运维部署 | 新服务器安装、卸载、重装、修复或验证 k0s 单节点集群 | 安装 k0s、一键部署 k0s、卸载 k0s、重装 k0s、修复 CoreDNS | 完成 k0s 部署并输出 API URL 与完整 admin token；GitHub 慢或失败时回退 CDN；或清理 k0s 服务、数据、配置和二进制 |
+| `smart-campus-analyst` | 数据分析 | 分析学校数据、智慧校园指标、学校运行情况或导出校园数据报告 | 分析学校数据、智慧校园报告、智慧校园指标、生成校园图表 | 通过 BDS MCP 查询当前学校指标，生成结构化 Markdown 分析报告，并在有数据时询问是否生成可视化 HTML 图表 |
 
 ## 仓库结构
 
@@ -25,7 +26,9 @@
 │   └── SKILL.md
 ├── frontend-design/
 │   └── SKILL.md
-└── k0s-installer/
+├── k0s-installer/
+│   └── SKILL.md
+└── smart-campus-analyst/
     └── SKILL.md
 ```
 
@@ -42,6 +45,8 @@
 一键部署 k0s
 卸载 k0s
 修复 k0s CoreDNS
+分析学校数据
+生成智慧校园报告
 ```
 
 如果不确定该用哪个技能，先看 [技能目录](.opencode/skills/README.md) 中的“什么时候用”和“典型触发语”。

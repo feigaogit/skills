@@ -13,6 +13,7 @@
 - `.opencode/skills/dingding-report-writer/SKILL.md`: DingTalk daily/weekly draft, confirmation, config, and send workflow.
 - `.opencode/skills/frontend-design/SKILL.md`: frontend UI/design workflow and preview behavior.
 - `.opencode/skills/k0s-installer/SKILL.md`: k0s installation, repair, DNS/CoreDNS, airgap, token, and API URL workflow.
+- `.opencode/skills/smart-campus-analyst/SKILL.md`: smart campus data analysis workflow using BDS MCP metrics and optional HTML chart generation.
 - `.xcode/dingding-report-config.yaml`: local DingTalk runtime config; `.xcode/` is gitignored, so do not commit or copy private values.
 - `.xcode/scheduled-tasks.yaml`: local XCode schedule config; runtime state only.
 - `.opencode/package.json`: declares the OpenCode plugin dependency; there are no project scripts.
@@ -30,6 +31,14 @@
 - For daily or weekly DingTalk reports, use `dingding-report-writer`.
 - For frontend, UI, layout, styling, page, component, dashboard, or visual design work, use `frontend-design`.
 - For k0s installation, uninstallation, reinstall, Kubernetes single-node deployment, airgap, CoreDNS, conntrack, kube-router, API URL, or admin token work, use `k0s-installer`.
+- For school data, smart campus metrics, campus operation analysis, BDS MCP reports, or campus chart exports, use `smart-campus-analyst`.
+
+## Smart Campus Workflow Rules
+
+- Read BDS credentials only from `BDS_MCP_TOKEN`; never write tokens, decoded JWT payloads, user names, private keys, or school filter internals into repository files or public output.
+- Use BDS MCP tools for metrics, dimensions, capabilities, and queries; do not invent metric values or cross-school data.
+- JWT filters define the current school data boundary. Do not fetch, infer, or display other school names.
+- If generating charts, write runtime HTML output under `/workspace/.xcode/artifacts/`; `.xcode/` remains local runtime state and must not be committed.
 
 ## DingTalk Workflow Rules
 
